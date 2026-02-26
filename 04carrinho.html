@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetLinka | Carrinho</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins', sans-serif;
+background:#f4f6ff;
+color:#333;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:26px;
+font-weight:700;
+}
+
+.logo span{
+color:#6C63FF;
+}
+
+nav a{
+margin-left:30px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#6C63FF;
+}
+
+/* SECTION */
+section{
+padding:140px 20px 80px 20px;
+min-height:100vh;
+text-align:center;
+}
+
+h2{
+font-size:32px;
+margin-bottom:30px;
+}
+
+/* CART BOX */
+.cart-container{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.cart-box{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 15px 30px rgba(0,0,0,0.1);
+width:100%;
+max-width:600px;
+text-align:left;
+}
+
+.cart-item{
+display:flex;
+justify-content:space-between;
+margin-bottom:15px;
+padding-bottom:10px;
+border-bottom:1px solid #eee;
+}
+
+.total{
+margin-top:20px;
+font-size:20px;
+font-weight:bold;
+text-align:right;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:linear-gradient(135deg,#6C63FF,#4b44d4);
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+margin-top:25px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* FOOTER */
+footer{
+padding:20px;
+text-align:center;
+background:#ddd;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">🐾 Pet<span>Linka</span></div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="servicos.html">Serviços</a>
+<a href="agendamento.html">Agendamento</a>
+<a href="carrinho.html">Carrinho</a>
+<a href="pagamento.html">Pagamento</a>
+</nav>
+</header>
+
+<section>
+
+<h2>Carrinho de Compras</h2>
+
+<div class="cart-container">
+<div class="cart-box">
+
+<div class="cart-item">
+<span>Ração Premium</span>
+<span>R$ 120,00</span>
+</div>
+
+<div class="cart-item">
+<span>Banho Completo</span>
+<span>R$ 80,00</span>
+</div>
+
+<div class="total">
+Total: R$ 200,00
+</div>
+
+<a href="pagamento.html" class="btn">Finalizar Compra</a>
+
+</div>
+</div>
+
+</section>
+
+<footer>
+© 2026 PetLinka - Plataforma Full Stack
+</footer>
+
+</body>
+</html>

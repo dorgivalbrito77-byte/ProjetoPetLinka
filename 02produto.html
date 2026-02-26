@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetLinka | Serviços</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins', sans-serif;
+background:#f4f6ff;
+color:#333;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:26px;
+font-weight:700;
+}
+
+.logo span{
+color:#6C63FF;
+}
+
+nav a{
+margin-left:30px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#6C63FF;
+}
+
+/* SECTION */
+section{
+padding:140px 80px 80px 80px;
+text-align:center;
+}
+
+h2{
+font-size:32px;
+margin-bottom:40px;
+}
+
+/* CARROSSEL 3D */
+.carousel-container{
+height:400px;
+perspective:1200px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.carousel{
+width:260px;
+height:260px;
+position:relative;
+transform-style:preserve-3d;
+animation:rotate 25s infinite linear;
+}
+
+.carousel .card{
+position:absolute;
+width:260px;
+height:260px;
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 15px 30px rgba(0,0,0,0.15);
+transition:transform .5s;
+}
+
+.carousel .card img{
+width:100%;
+height:170px;
+object-fit:cover;
+}
+
+.carousel .card h3{
+padding:15px;
+}
+
+/* POSICIONAMENTO CIRCULAR */
+.carousel .card:nth-child(1){transform:rotateY(0deg) translateZ(420px);}
+.carousel .card:nth-child(2){transform:rotateY(72deg) translateZ(420px);}
+.carousel .card:nth-child(3){transform:rotateY(144deg) translateZ(420px);}
+.carousel .card:nth-child(4){transform:rotateY(216deg) translateZ(420px);}
+.carousel .card:nth-child(5){transform:rotateY(288deg) translateZ(420px);}
+
+@keyframes rotate{
+from{transform:rotateY(0deg);}
+to{transform:rotateY(360deg);}
+}
+
+/* FOOTER */
+footer{
+padding:20px;
+text-align:center;
+background:#ddd;
+margin-top:60px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">🐾 Pet<span>Linka</span></div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="servicos.html">Serviços</a>
+<a href="agendamento.html">Agendamento</a>
+<a href="carrinho.html">Carrinho</a>
+<a href="pagamento.html">Pagamento</a>
+</nav>
+</header>
+
+<section>
+
+<h2>Pesquisar Produtos e Serviços</h2>
+
+<div class="carousel-container">
+<div class="carousel">
+
+<div class="card">
+<img src="img/image-banho-e-tosa.webp" alt="Banho e Tosa">
+<h3>Banho e Tosa</h3>
+</div>
+
+<div class="card">
+<img src="img/Marcas-de-racao-Petlove.jpg" alt="Ração">
+<h3>Ração</h3>
+</div>
+
+<div class="card">
+<img src="img/veterinario-gettyimages-885571364-612x612.jpg" alt="Veterinário">
+<h3>Veterinário</h3>
+</div>
+
+<div class="card">
+<img src="img/hotel Pets-aufabeto_widelg.jpg" alt="Hotel">
+<h3>Hotel para Pets</h3>
+</div>
+
+<div class="card">
+<img src="img/Adestramento-revista-caesecia-adestrar-caes-1.png" alt="Adestramento">
+<h3>Adestramento</h3>
+</div>
+
+</div>
+</div>
+
+</section>
+
+<footer>
+© 2026 PetLinka - Plataforma Full Stack
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetLinka | Home</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins', sans-serif;
+background:#f4f6ff;
+color:#333;
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:26px;
+font-weight:700;
+}
+
+.logo span{
+color:#6C63FF;
+}
+
+nav a{
+margin-left:30px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#6C63FF;
+}
+
+/* HERO SECTION */
+#home{
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("https://images.unsplash.com/photo-1601758228041-f3b2795255f1") center/cover no-repeat;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+text-align:center;
+padding:0 20px;
+}
+
+.hero-box{
+max-width:700px;
+}
+
+.hero-box h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero-box p{
+font-size:18px;
+margin-bottom:30px;
+line-height:1.6;
+}
+
+.btn{
+display:inline-block;
+padding:14px 30px;
+background:linear-gradient(135deg,#6C63FF,#4b44d4);
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+margin:10px;
+box-shadow:0 8px 20px rgba(108,99,255,.3);
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+/* FOOTER */
+footer{
+padding:20px;
+text-align:center;
+background:#ddd;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">🐾 Pet<span>Linka</span></div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="servicos.html">Serviços</a>
+<a href="agendamento.html">Agendamento</a>
+<a href="carrinho.html">Carrinho</a>
+<a href="pagamento.html">Pagamento</a>
+</nav>
+</header>
+
+<section id="home">
+<div class="hero-box">
+<h1>Conectando você aos melhores serviços pet</h1>
+
+<p>
+Agendamento online, compra de produtos e serviços especializados
+para seu pet em uma única plataforma digital.
+</p>
+
+<a href="servicos.html" class="btn">Pesquisar Produtos e Serviços</a>
+<a href="agendamento.html" class="btn">Agendar Agora</a>
+
+</div>
+</section>
+
+<footer>
+© 2026 PetLinka - Plataforma Full Stack
+</footer>
+
+</body>
+</html>
